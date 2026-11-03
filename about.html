@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f1419">
+<title>O aplikacji – Tennis Lab</title>
+<style>:root{--bg:#0f1419;--panel:#171e26;--line:#2a3542;--txt:#dfe6ee;--mut:#8a98a8;--acc:#4cc9f0}*{box-sizing:border-box}body{text-align:center;background:var(--bg);color:var(--txt);font:15px/1.5 Segoe UI,system-ui,sans-serif;padding:24px 18px calc(90px + env(safe-area-inset-bottom));max-width:640px;margin:0 auto;min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding-top:70px;padding-bottom:calc(70px + env(safe-area-inset-bottom))}h1{font-size:22px;margin:0 0 14px}h2{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);margin:26px 0 8px;font-weight:600}p{margin:0 0 10px}.mut{color:var(--mut);font-size:15px}a{color:var(--acc)}.box{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}.backmenu{position:fixed;left:10px;bottom:calc(10px + env(safe-area-inset-bottom));z-index:50;background:#171e26eb;color:#dfe6ee;border:1px solid #2a3542;border-radius:22px;padding:10px 16px;font:600 14px Segoe UI,system-ui,sans-serif;text-decoration:none;box-shadow:0 2px 10px #0006}.backmenu:active{background:#4cc9f0;color:#04121a}.hide{display:none}.mod{padding:10px 0;border-bottom:1px solid var(--line)}.mod b{display:block;color:var(--acc);font-size:15px}.mod span{color:var(--mut);font-size:15px}</style>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0f1419">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+</head>
+<body>
+<h1>🎾 Tennis Lab</h1>
+<p>Symulator torów lotu piłki tenisowej. Pokazuje, jak prędkość, rotacja i kąt uderzenia wpływają na lot i odbicie.</p>
+<h2>Moduły</h2>
+<p style="margin:0"><b style="color:var(--acc);font-size:15px">Shot</b> &nbsp;·&nbsp; <b style="color:var(--acc);font-size:15px">Serve</b></p>
+<h2>Kontakt</h2>
+<p id="a-bio" class="hide mut"></p>
+<p id="a-mail" class="hide" style="margin-bottom:4px"><a id="a-maila" href="#"></a></p>
+<p class="mut">Masz uwagi, pomysł albo znalazłaś błąd? Napisz.</p>
+<p class="mut" style="margin-top:34px;font-size:12px">Model fizyczny posiada uproszczenia, a wartości w gotowych zestawach są orientacyjne. Wyniki ilustrują zależności, nie są pomiarem.<br>Wersja 0.1 · 2 listopada 2026<span id="a-name" class="hide"> · </span></p>
+<a class="backmenu" href="index.html" aria-label="Wróć do menu głównego">← Menu</a>
+<script>const ABOUT={name:"Paulina",bio:"",email:"tennis.lab.dev@gmail.com"};(function(){const a=(e,t)=>{const n=document.getElementById(e);t&&(n.textContent=t,n.classList.remove("hide"))};if(ABOUT.name){const e=document.getElementById("a-name");e.textContent+=ABOUT.name,e.classList.remove("hide")}if(a("a-bio",ABOUT.bio),ABOUT.email){const e=document.getElementById("a-maila");e.textContent=ABOUT.email,e.href="mailto:"+ABOUT.email,document.getElementById("a-mail").classList.remove("hide")}})();</script>
+</body>
+</html>
